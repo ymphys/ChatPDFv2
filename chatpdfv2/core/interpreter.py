@@ -3,37 +3,33 @@ from __future__ import annotations
 import logging
 import time
 from pathlib import Path
-from typing import Dict, Iterable, Optional, Sequence
+from typing import Any, Dict, Iterable, Optional, Sequence
 
-from ..services.openai_client import post_with_retries
+from ..services.deepseek_client import create_deepseek_client, post_with_retries_deepseek
 from ..utils import load_existing_answers, split_into_chunks
 
 logger = logging.getLogger("chatpdf")
 
-OPENAI_CHAT_COMPLETIONS_URL = "https://api.openai.com/v1/chat/completions"
 
 
-def chatgpt_interpretation(
+def deepseek_interpretation(
     md_content: Optional[dict],
     questions: Sequence[str],
-    openai_api_key: str,
     output_path: Path,
     *,
-    model: str = "gpt-4-turbo-preview",
+    model: str = "deepseek-chat",
     chunk_pause_seconds: int = 1,
+    temperature: float = 1.0,
 ) -> str:
     """
-    Use the OpenAI Chat Completions API to interpret markdown content.
-    The return value mirrors the legacy implementation (new MD sections).
+    Use the DeepSeek API to interpret markdown content.
     """
     if not md_content:
         logger.info("No content to interpret")
         return ""
 
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {openai_api_key}",
-    }
+    # 创建 DeepSeek 客户端
+    client = create_deepseek_client()
 
     existing_answers = load_existing_answers(output_path)
     new_sections: list[str] = []
@@ -47,24 +43,26 @@ def chatgpt_interpretation(
 
         try:
             context = _format_existing_context(existing_answers)
-            chunk_answers = _interpret_chunks(
+            chunk_answers = _interpret_chunks_deepseek(
                 md_content["content"],
                 question=question,
-                headers=headers,
+                client=client,
                 model=model,
                 pause_seconds=chunk_pause_seconds,
                 context=context,
+                temperature=temperature,
             )
 
             if len(chunk_answers) == 1:
                 final_answer = chunk_answers[0]
             else:
-                final_answer = _synthesise_answer(
+                final_answer = _synthesise_answer_deepseek(
                     chunk_answers,
                     question=question,
-                    headers=headers,
+                    client=client,
                     model=model,
                     context=context,
+                    temperature=0.0,  # 合成答案时使用更低的 temperature
                 )
 
             new_sections.append(f"## {question}\n\n{final_answer}\n\n")
@@ -82,17 +80,20 @@ def chatgpt_interpretation(
     return result
 
 
-def _interpret_chunks(
+
+
+def _interpret_chunks_deepseek(
     content: str,
     *,
     question: str,
-    headers: dict,
+    client: Any,
     model: str,
     pause_seconds: int,
     context: str,
+    temperature: float = 1.0,
 ) -> list[str]:
     """
-    Ask the model the same question across chunked document segments.
+    Ask the DeepSeek model the same question across chunked document segments.
     """
     chunk_answers: list[str] = []
     chunks = split_into_chunks(content)
@@ -107,24 +108,22 @@ def _interpret_chunks(
         )
         user_sections.append(f"问题：{question}")
 
-        payload = {
-            "model": model,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": "你是一个学术文献分析专家，请基于提供的文档内容回答问题，请注意对专业名词做出解释。",
-                },
-                {
-                    "role": "user",
-                    "content": "\n\n".join(user_sections),
-                },
-            ],
-            "temperature": 0.7,
-        }
-        response = post_with_retries(
-            OPENAI_CHAT_COMPLETIONS_URL,
-            headers=headers,
-            json_data=payload,
+        messages = [
+            {
+                "role": "system",
+                "content": "你是一个学术文献分析专家，请基于提供的文档内容回答问题，请注意对专业名词做出解释。",
+            },
+            {
+                "role": "user",
+                "content": "\n\n".join(user_sections),
+            },
+        ]
+
+        response = post_with_retries_deepseek(
+            client=client,
+            model=model,
+            messages=messages,
+            temperature=temperature,
         )
 
         if response is None:
@@ -135,31 +134,27 @@ def _interpret_chunks(
                 len(chunks),
                 question,
             )
-        elif response.status_code == 200:
-            text = response.json()["choices"][0]["message"]["content"].strip()
+        else:
+            text = response.choices[0].message.content.strip()
             chunk_answers.append(text)
             logger.info("Chunk %s/%s answered for question: %s", idx, len(chunks), question)
             logger.debug("Chunk %s preview: %s", idx, text[:120].replace("\n", " "))
-        else:
-            logger.error(
-                "Error with OpenAI API for chunk %s: %s", idx, response.status_code
-            )
-            chunk_answers.append(f"[片段调用失败：{response.status_code}]")
 
         time.sleep(pause_seconds)
     return chunk_answers
 
 
-def _synthesise_answer(
+def _synthesise_answer_deepseek(
     chunk_answers: Iterable[str],
     *,
     question: str,
-    headers: dict,
+    client: Any,
     model: str,
     context: str,
+    temperature: float = 0.0,
 ) -> str:
     """
-    Reconcile multiple chunk answers into a single, coherent response.
+    Reconcile multiple chunk answers into a single, coherent response using DeepSeek.
     """
     context_block = (
         "以下是之前的问题与回答，可作为上下文：\n\n"
@@ -175,26 +170,25 @@ def _synthesise_answer(
         + "若文档未提供信息请明确说明。\n\n"
         + "\n\n---\n\n".join(chunk_answers)
     )
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": "你负责把分片回答合并成最终答案。"},
-            {"role": "user", "content": f"{synth_prompt}\n\n问题：{question}"},
-        ],
-        "temperature": 0.0,
-    }
-    response = post_with_retries(
-        OPENAI_CHAT_COMPLETIONS_URL,
-        headers=headers,
-        json_data=payload,
+    
+    messages = [
+        {"role": "system", "content": "你负责把分片回答合并成最终答案。"},
+        {"role": "user", "content": f"{synth_prompt}\n\n问题：{question}"},
+    ]
+
+    response = post_with_retries_deepseek(
+        client=client,
+        model=model,
+        messages=messages,
+        temperature=temperature,
     )
-    if response and response.status_code == 200:
-        final_answer = response.json()["choices"][0]["message"]["content"].strip()
+    
+    if response:
+        final_answer = response.choices[0].message.content.strip()
         logger.info("Synthesized final answer for question: %s", question)
         return final_answer
 
-    status = response.status_code if response else "no response"
-    logger.error("Failed to synthesize answer for question '%s': %s", question, status)
+    logger.error("Failed to synthesize answer for question '%s'", question)
     return "无法获取答案，API调用失败。"
 
 
@@ -229,4 +223,4 @@ def _format_existing_context(existing_answers: Dict[str, str]) -> str:
     return "\n\n".join(sections)
 
 
-__all__ = ["chatgpt_interpretation"]
+__all__ = ["deepseek_interpretation"]
