@@ -1,5 +1,5 @@
 """
-Configuration helpers for ChatPDFv1.
+Configuration helpers for ChatPDFv2.
 """
 
 from .settings import Settings, get_settings  # noqa: F401

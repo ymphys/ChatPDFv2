@@ -1,5 +1,5 @@
 [project]
-name = "chatpdfv1"
+name = "chatpdfv2"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -16,4 +16,4 @@ dev = [
 ]
 
 [project.scripts]
-chatpdf = "chatpdfv1.interfaces.cli:main"
+chatpdf = "chatpdfv2.interfaces.cli:main"

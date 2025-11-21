@@ -92,7 +92,7 @@ wheels = [
 ]
 
 [[package]]
-name = "chatpdfv1"
+name = "chatpdfv2"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

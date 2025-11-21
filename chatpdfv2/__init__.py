@@ -1,7 +1,7 @@
 """
-ChatPDFv1 package bootstrap.
+ChatPDFv2 package bootstrap.
 
-Expose high-level helpers so callers can import from `chatpdfv1` without
+Expose high-level helpers so callers can import from `chatpdfv2` without
 needing to traverse the entire package hierarchy.
 """
 
