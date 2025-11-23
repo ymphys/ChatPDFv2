@@ -1110,3 +1110,185 @@
 2025-11-21 07:47:26,072 - DEBUG - Chunk 1 preview: [2024年]，[墨西哥普埃布拉自治大学]的[Arroyo-Ureña等]针对[在HL-LHC上通过光子诱导电子-μ子对过程探测带电轻子味破坏现象]，采用[基于规范不变有效场论框架的蒙特卡洛模拟和多元分析技术]，对[超外围碰撞过程γγ→e±
 2025-11-21 07:47:27,080 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251121074546/interpretation_results.md
 2025-11-21 07:47:27,080 - INFO - ChatPDFv2 CLI process finished
+2025-11-22 07:25:31,873 - INFO - Starting ChatPDFv2 CLI process
+2025-11-22 07:25:31,874 - INFO - Processing 3 PDF files from directory: files/test_batch-local-dir
+2025-11-22 07:25:31,875 - INFO - Requesting batch upload URLs for 3 files
+2025-11-22 07:25:32,041 - INFO - Batch ID: 64b2e346-71e8-4848-aa87-4200321b09c7, received 3 upload URLs
+2025-11-22 07:25:32,041 - INFO - Uploading file 1/3: files/test_batch-local-dir/example2.pdf
+2025-11-22 07:25:32,418 - INFO - Successfully uploaded files/test_batch-local-dir/example2.pdf
+2025-11-22 07:25:32,418 - INFO - Uploading file 2/3: files/test_batch-local-dir/example3.pdf
+2025-11-22 07:25:32,691 - INFO - Successfully uploaded files/test_batch-local-dir/example3.pdf
+2025-11-22 07:25:32,692 - INFO - Uploading file 3/3: files/test_batch-local-dir/example1.pdf
+2025-11-22 07:25:33,141 - INFO - Successfully uploaded files/test_batch-local-dir/example1.pdf
+2025-11-22 07:25:33,141 - INFO - Getting batch results for batch_id: 64b2e346-71e8-4848-aa87-4200321b09c7
+2025-11-22 07:25:33,268 - INFO - Batch 64b2e346-71e8-4848-aa87-4200321b09c7 status: None
+2025-11-22 07:25:33,268 - DEBUG - Batch data: {'batch_id': '64b2e346-71e8-4848-aa87-4200321b09c7', 'extract_result': [{'data_id': 'example2', 'file_name': 'example2.pdf', 'state': 'waiting-file', 'err_msg': ''}, {'data_id': 'example3', 'file_name': 'example3.pdf', 'state': 'waiting-file', 'err_msg': ''}, {'data_id': 'example1', 'file_name': 'example1.pdf', 'state': 'waiting-file', 'err_msg': ''}]}
+2025-11-22 07:25:38,273 - INFO - Getting batch results for batch_id: 64b2e346-71e8-4848-aa87-4200321b09c7
+2025-11-22 07:25:38,405 - INFO - Batch 64b2e346-71e8-4848-aa87-4200321b09c7 status: None
+2025-11-22 07:25:38,406 - DEBUG - Batch data: {'batch_id': '64b2e346-71e8-4848-aa87-4200321b09c7', 'extract_result': [{'data_id': 'example2', 'file_name': 'example2.pdf', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-20/47cb1b59-35af-4796-b652-62d6efb81ac2.zip'}, {'data_id': 'example3', 'file_name': 'example3.pdf', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-20/1247f7ea-3388-4f1b-9091-0c5eb9669039.zip'}, {'data_id': 'example1', 'file_name': 'example1.pdf', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-20/9b46e3f4-3662-45d1-9e0f-62e4c416bbf6.zip'}]}
+2025-11-22 07:25:38,408 - INFO - Downloading file from https://cdn-mineru.openxlab.org.cn/pdf/2025-11-20/47cb1b59-35af-4796-b652-62d6efb81ac2.zip to /var/folders/_7/wlwq7pgj1815rs42br1b3pv80000gn/T/tmpktsyq5ky/result.zip
+2025-11-22 07:25:38,787 - INFO - Selected markdown file /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example2_20251122072538/full.md from MinerU results
+2025-11-22 07:25:38,789 - INFO - Batch processing complete for example2.pdf. Markdown: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example2_20251122072538/full.md
+2025-11-22 07:25:38,791 - INFO - Downloading file from https://cdn-mineru.openxlab.org.cn/pdf/2025-11-20/1247f7ea-3388-4f1b-9091-0c5eb9669039.zip to /var/folders/_7/wlwq7pgj1815rs42br1b3pv80000gn/T/tmpt2js7436/result.zip
+2025-11-22 07:25:39,979 - INFO - Selected markdown file /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example3_20251122072538/full.md from MinerU results
+2025-11-22 07:25:39,981 - INFO - Batch processing complete for example3.pdf. Markdown: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example3_20251122072538/full.md
+2025-11-22 07:25:39,982 - INFO - Downloading file from https://cdn-mineru.openxlab.org.cn/pdf/2025-11-20/9b46e3f4-3662-45d1-9e0f-62e4c416bbf6.zip to /var/folders/_7/wlwq7pgj1815rs42br1b3pv80000gn/T/tmpdd48pqhe/result.zip
+2025-11-22 07:25:40,574 - INFO - Selected markdown file /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example1_20251122072539/full.md from MinerU results
+2025-11-22 07:25:40,577 - INFO - Batch processing complete for example1.pdf. Markdown: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example1_20251122072539/full.md
+2025-11-22 07:25:40,578 - INFO - Batch processing completed. Generated 3 markdown files
+2025-11-22 07:25:40,578 - INFO - Processed: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example2_20251122072538/full.md
+2025-11-22 07:25:40,578 - INFO - Processed: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example3_20251122072538/full.md
+2025-11-22 07:25:40,578 - INFO - Processed: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example1_20251122072539/full.md
+2025-11-22 07:25:40,579 - INFO - Using DeepSeek for interpretation of full.md
+2025-11-22 07:25:56,347 - INFO - DeepSeek API用量: prompt_tokens=23205, completion_tokens=353, total_tokens=23558, 估算价格=¥0.0475
+2025-11-22 07:25:56,348 - INFO - Chunk 1/1 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:25:56,348 - DEBUG - Chunk 1 preview: [2030年代]，[马克斯·普朗克等离子体物理研究所等机构]的[A. Di Siena等]针对[ITER燃烧等离子体性能预测问题]，采用[全局回旋动理学模拟与输运求解器耦合的GENE-Tango框架]，对[ITER 15MA基准场景的等离子
+2025-11-22 07:25:57,354 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example2_20251122072538/interpretation_results.md
+2025-11-22 07:25:57,355 - INFO - Using DeepSeek for interpretation of full.md
+2025-11-22 07:26:13,290 - INFO - DeepSeek API用量: prompt_tokens=25839, completion_tokens=331, total_tokens=26170, 估算价格=¥0.0527
+2025-11-22 07:26:13,290 - INFO - Chunk 1/1 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:26:13,290 - DEBUG - Chunk 1 preview: [2024年]，[奥地利科学院粒子物理研究所、维也纳大学]的[Helmut Eberl、Maximilian Fahrrecker、Josef Pradler]针对[轻质量暗物质粒子的地下产生与探测问题]，采用[100MeV能区电子束轰击靶
+2025-11-22 07:26:14,292 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example3_20251122072538/interpretation_results.md
+2025-11-22 07:26:14,293 - INFO - Using DeepSeek for interpretation of full.md
+2025-11-22 07:26:31,411 - INFO - DeepSeek API用量: prompt_tokens=13039, completion_tokens=420, total_tokens=13459, 估算价格=¥0.0273
+2025-11-22 07:26:31,411 - INFO - Chunk 1/1 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:26:31,411 - DEBUG - Chunk 1 preview: [2025年]，[德克萨斯大学奥斯汀分校、帝国理工学院、亚利桑那大学等研究机构]的[J. S. Bianco等]针对[太阳风中阿尔文波驱动的质子束形成与演化机制]，采用[一维混合膨胀盒模拟结合线性稳定性分析]，对[0.3至1.5 AU范围内
+2025-11-22 07:26:32,415 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/example1_20251122072539/interpretation_results.md
+2025-11-22 07:26:32,415 - INFO - ChatPDFv2 CLI process finished
+2025-11-22 07:32:38,425 - INFO - Starting ChatPDFv2 CLI process
+2025-11-22 07:32:38,426 - INFO - Processing 3 URLs from file: files/batch_urls.txt
+2025-11-22 07:32:38,426 - INFO - Submitting batch URL processing for 3 URLs
+2025-11-22 07:32:38,832 - INFO - Batch ID: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:32:38,833 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:32:38,958 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:32:38,959 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:32:43,964 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:32:44,148 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:32:44,148 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:32:49,153 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:32:49,291 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:32:49,291 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:32:54,296 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:32:54,433 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:32:54,433 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:32:59,438 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:32:59,649 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:32:59,649 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:33:04,655 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:04,853 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:04,853 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:33:09,858 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:10,025 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:10,025 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'pending', 'err_msg': ''}]}
+2025-11-22 07:33:15,030 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:15,574 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:15,574 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:20,579 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:20,736 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:20,737 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:25,742 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:25,890 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:25,890 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:30,896 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:31,130 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:31,130 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:36,136 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:36,351 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:36,351 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:41,355 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:41,592 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:41,593 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:46,598 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:46,806 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:46,806 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:51,811 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:51,968 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:51,970 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:33:56,975 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:33:57,119 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:33:57,119 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:02,124 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:02,247 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:02,247 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:07,247 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:07,379 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:07,379 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:12,384 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:12,533 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:12,533 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:17,539 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:17,942 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:17,942 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:22,947 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:23,088 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:23,089 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:28,091 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:28,272 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:28,273 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:33,278 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:33,477 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:33,478 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:38,478 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:38,770 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:38,771 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:43,776 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:43,991 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:43,992 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:48,997 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:49,217 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:49,217 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:54,222 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:54,429 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:54,429 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:34:59,434 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:34:59,596 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:34:59,596 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:35:04,596 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:35:04,733 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:35:04,733 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:35:09,738 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:35:09,879 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:35:09,879 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'pending', 'err_msg': ''}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:35:14,885 - INFO - Getting batch results for batch_id: 81f962b0-e0dc-4b39-b1db-0ce000a60121
+2025-11-22 07:35:15,004 - INFO - Batch 81f962b0-e0dc-4b39-b1db-0ce000a60121 status: None
+2025-11-22 07:35:15,004 - DEBUG - Batch data: {'batch_id': '81f962b0-e0dc-4b39-b1db-0ce000a60121', 'extract_result': [{'data_id': '2511', 'file_name': '2511.14831', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/06bbe915-cd84-43ba-b7c2-9b363cebf8d5.zip'}, {'data_id': '2511', 'file_name': '2511.14832', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip'}, {'data_id': '2511', 'file_name': '2511.14835', 'state': 'done', 'err_msg': '', 'full_zip_url': 'https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip'}]}
+2025-11-22 07:35:15,005 - INFO - Downloading file from https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/06bbe915-cd84-43ba-b7c2-9b363cebf8d5.zip to /var/folders/_7/wlwq7pgj1815rs42br1b3pv80000gn/T/tmpkt34rcl4/result.zip
+2025-11-22 07:35:15,917 - INFO - Selected markdown file /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073515/full.md from MinerU results
+2025-11-22 07:35:15,918 - INFO - Downloading file from https://arxiv.org/pdf/2511.14831 to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073515/2511_20251122073515.pdf
+2025-11-22 07:35:22,418 - INFO - URL batch processing complete for 2511.14831. Markdown: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073515/full.md
+2025-11-22 07:35:22,421 - INFO - Downloading file from https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/4292d26f-5875-4a80-8698-4718fd5ef3c9.zip to /var/folders/_7/wlwq7pgj1815rs42br1b3pv80000gn/T/tmp41dacnrg/result.zip
+2025-11-22 07:35:22,989 - INFO - Selected markdown file /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073522/full.md from MinerU results
+2025-11-22 07:35:22,989 - INFO - Downloading file from https://arxiv.org/pdf/2511.14832 to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073522/2511_20251122073522.pdf
+2025-11-22 07:35:24,668 - INFO - URL batch processing complete for 2511.14832. Markdown: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073522/full.md
+2025-11-22 07:35:24,669 - INFO - Downloading file from https://cdn-mineru.openxlab.org.cn/pdf/2025-11-21/2a93c028-a079-426e-a96d-ff7427fec1e9.zip to /var/folders/_7/wlwq7pgj1815rs42br1b3pv80000gn/T/tmp5fx_z1f8/result.zip
+2025-11-22 07:35:25,091 - INFO - Selected markdown file /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073524/full.md from MinerU results
+2025-11-22 07:35:25,091 - INFO - Downloading file from https://arxiv.org/pdf/2511.14835 to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073524/2511_20251122073524.pdf
+2025-11-22 07:35:26,935 - INFO - URL batch processing complete for 2511.14835. Markdown: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073524/full.md
+2025-11-22 07:35:26,936 - INFO - URL batch processing completed. Generated 3 markdown files
+2025-11-22 07:35:26,936 - INFO - Processed: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073515/full.md
+2025-11-22 07:35:26,936 - INFO - Processed: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073522/full.md
+2025-11-22 07:35:26,936 - INFO - Processed: /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073524/full.md
+2025-11-22 07:35:26,936 - INFO - Using DeepSeek for interpretation of full.md
+2025-11-22 07:35:43,203 - INFO - DeepSeek API用量: prompt_tokens=27190, completion_tokens=353, total_tokens=27543, 估算价格=¥0.0554
+2025-11-22 07:35:43,203 - INFO - Chunk 1/3 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:35:43,203 - DEBUG - Chunk 1 preview: [2024年]，[德国电子同步加速器研究所（DESY）、马德里理论物理研究所等]的[Thomas Biekött等]针对[电弱相变的理论不确定性问题]，采用[四维（4D）方法和维度约化的三维有效场论（3D EFT）方法]，对[带复标量单态的
+2025-11-22 07:35:59,740 - INFO - DeepSeek API用量: prompt_tokens=28960, completion_tokens=346, total_tokens=29306, 估算价格=¥0.0590
+2025-11-22 07:35:59,741 - INFO - Chunk 2/3 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:35:59,741 - DEBUG - Chunk 2 preview: [2024年]，[未说明]的[未说明]针对[电弱相变的理论不确定性及其对引力波预测的影响]，采用[四维场论方法和维度约化的三维有效场论方法]，对[复标量单态扩展标准模型中的强一阶电弱相变]进行了研究，并发现[维度约化的三维有效场论方法在重整
+2025-11-22 07:36:21,441 - INFO - DeepSeek API用量: prompt_tokens=2221, completion_tokens=620, total_tokens=2841, 估算价格=¥0.0063
+2025-11-22 07:36:21,441 - INFO - Chunk 3/3 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:36:21,441 - DEBUG - Chunk 3 preview: [2023年]，[未说明]的[J. Lofgren等]针对[有限温度下的成核过程]，采用[规范不变微扰框架]，对[量子场论中的真空衰变]进行了研究，并发现[建立了有限温度下规范不变的成核率计算方法]。  [2022年]，[未说明]的[J. 
+2025-11-22 07:36:33,726 - INFO - DeepSeek API用量: prompt_tokens=1454, completion_tokens=343, total_tokens=1797, 估算价格=¥0.0039
+2025-11-22 07:36:33,727 - INFO - Synthesized final answer for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:36:33,728 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073515/interpretation_results.md
+2025-11-22 07:36:33,728 - INFO - Using DeepSeek for interpretation of full.md
+2025-11-22 07:36:46,731 - INFO - DeepSeek API用量: prompt_tokens=12232, completion_tokens=304, total_tokens=12536, 估算价格=¥0.0254
+2025-11-22 07:36:46,731 - INFO - Chunk 1/1 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:36:46,731 - DEBUG - Chunk 1 preview: [2025年]，[德国亚琛工业大学、汉堡大学和美国罗格斯大学]的[Marie Hein等]针对[如何以模型无关的方式选择最佳异常检测器]，采用[提出ARGOS指标并基于LHC Olympics数据集进行系统验证]，对[弱监督分类器异常检测方
+2025-11-22 07:36:47,737 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073522/interpretation_results.md
+2025-11-22 07:36:47,738 - INFO - Using DeepSeek for interpretation of full.md
+2025-11-22 07:37:03,627 - INFO - DeepSeek API用量: prompt_tokens=6670, completion_tokens=423, total_tokens=7093, 估算价格=¥0.0146
+2025-11-22 07:37:03,627 - INFO - Chunk 1/1 answered for question: 请用以下模板概括该文档，并将其中的占位符填入具体信息；若文中未提及某项，请写‘未说明’；若涉及到专业词汇，请在结尾处统一进行解释：[xxxx年]，[xx大学/研究机构]的[xx作者等]针对[研究问题]，采用[研究手段/方法]，对[研究对象或范围]进行了研究，并发现/得出[主要结论]。
+2025-11-22 07:37:03,627 - DEBUG - Chunk 1 preview: [2024年]，[墨西哥普埃布拉自治大学]的[M. A. Arroyo-Urena等]针对[在HL-LHC上通过光子诱导过程探测带电轻子味破坏现象]，采用[规范不变的有效场论框架结合蒙特卡洛模拟和多元分析技术]，对[超外围碰撞过程γγ→e±
+2025-11-22 07:37:04,631 - INFO - Interpretation answers appended to /Users/zhangjiabao/LLM_Dev/ChatPDFv2/files/2511_20251122073524/interpretation_results.md
+2025-11-22 07:37:04,631 - INFO - ChatPDFv2 CLI process finished
